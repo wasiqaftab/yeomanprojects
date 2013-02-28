@@ -1,9 +1,8 @@
-<div class="hero-unit">
-  <h1>'Allo, 'Allo!</h1>
-  <p>You now have</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
+
+  <ul class="unstyled">
+  <li ng-repeat="item in catalog">
+      <product item="item"></product>
+      <a href="" class="btn btn-primary" ng-click="basket.add(item)">Buy It</a>
+      </li>
   </ul>
-  <p>installed. this is my testdd</p>
-  <h3>Enjoy coding! - Yeoman</h3>
-</div>
+  

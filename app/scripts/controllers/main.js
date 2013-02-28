@@ -1,10 +1,7 @@
 'use strict';
 
 angular.module('yeomanprojectsApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Testacular'
-    ];
+  .controller('MainCtrl', function ($scope,catalog,basket) {
+    $scope.catalog = catalog;
+	$scope.basket = basket;
   });
